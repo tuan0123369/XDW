@@ -187,7 +187,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id_user`, `user_name`, `email`, `password`, `address`, `phone`, `avatar`, `role`) VALUES
 (1, '1', '123@123', '$2y$10$YGCqwuiL2A4wAo5gRQNt5eb/FEexW01BztORrP/kjKtL6K90mvR2e', '123', '111', 'large.png', 0),
-(2, '1', 'admin@admin', '$2y$10$OJ9c83ZGZ7Esy5hNEimSX.TOeKf04Br/3G3GYPzhpOQqVQw7QywW.', '1', '1', 'UNDONE', 0);
+(2, '1', 'admin@admin', '$2y$10$OJ9c83ZGZ7Esy5hNEimSX.TOeKf04Br/3G3GYPzhpOQqVQw7QywW.', '1', '1', 'UNDONE', 1);
 
 --
 -- Chỉ mục cho các bảng đã đổ
