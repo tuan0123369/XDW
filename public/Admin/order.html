@@ -1,0 +1,206 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> ModularAdmin - Free Dashboard Theme | HTML Version </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <!-- Theme initialization -->
+    <script>
+        var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
+            {};
+        var themeName = themeSettings.themeName || '';
+        if (themeName) {
+            document.write('<link rel="stylesheet" id="theme-style" href="css/app-' + themeName + '.css">');
+        }
+        else {
+            document.write('<link rel="stylesheet" id="theme-style" href="css/app.css">');
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="app" id="app">
+
+            <div data-include="header.html"></div>
+            <div data-include="sidebar.html"></div>
+
+            <div class="sidebar-overlay" id="sidebar-overlay"></div>
+            <div class="sidebar-mobile-menu-handle" id="sidebar-mobile-menu-handle"></div>
+            <div class="mobile-menu-handle"></div>
+            <article class="content items-list-page">
+                <div class="title-search-block">
+                    <div class="title-block">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="title"> Items <a href="item-editor.html"
+                                        class="btn btn-primary btn-sm rounded-s"> Add New </a>
+                                    <!--
+				 -->
+                                    <div class="action dropdown">
+                                        <button class="btn  btn-sm rounded-s btn-secondary dropdown-toggle"
+                                            type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false"> More actions... </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <a class="dropdown-item" href="#"><i
+                                                    class="fa fa-pencil-square-o icon"></i>Mark as a draft</a>
+                                            <a class="dropdown-item" href="#" data-toggle="modal"
+                                                data-target="#confirm-modal"><i class="fa fa-close icon"></i>Delete</a>
+                                        </div>
+                                    </div>
+                                </h3>
+                                <p class="title-description"> List of sample items - e.g. books, movies, events, etc...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-search">
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control boxed rounded-s" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-secondary rounded-s" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-block">
+                            <div class="card-title-block">
+                                <h3 class="title"> Responsive simple </h3>
+                            </div>
+                            <section class="example">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                                <th>Table heading</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                                <td>Table cell</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="text-center">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href=""> Prev </a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href=""> 1 </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href=""> 2 </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href=""> 3 </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href=""> 4 </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href=""> 5 </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href=""> Next </a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+    </div>
+    <!-- Reference block for JS -->
+    <div class="ref" id="ref">
+        <div class="color-primary"></div>
+        <div class="chart">
+            <div class="color-primary"></div>
+            <div class="color-secondary"></div>
+        </div>
+    </div>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-80463319-4', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("tbody tr").each(function () {
+                $(this).click(function () {
+                    $(location).attr('href', 'order_detail.html');
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
